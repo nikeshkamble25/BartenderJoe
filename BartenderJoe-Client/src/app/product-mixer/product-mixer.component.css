@@ -1,0 +1,8 @@
+.app-grayed-button{
+    background-color: #ccc;
+    color:#444
+}
+.app-active-button{
+    background-color: #4848d8;
+    color: white;
+}

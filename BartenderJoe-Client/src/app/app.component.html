@@ -1,0 +1,33 @@
+<table width="700px">
+  <tr>
+    <td valign="top">
+      <app-product-input [product]="product" (sendProductId)="getProduct($event)">        
+      </app-product-input>
+    </td>
+    <td valign="top">
+      <app-product-output [product]="product">        
+      </app-product-output>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" valign="top">
+      <app-product-mixer [product]="product">        
+      </app-product-mixer>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" valign="top">
+      <app-product-mix-action  [product]="product" (setMixingFlag)="getProductMixingFlag($event)">
+      </app-product-mix-action>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" style="padding: 20px;">
+      <div style="height: 200px;overflow: auto;border: dotted thin #aaa;">
+        <div *ngFor="let item of this.logs| async as list">
+            {{item}}
+        </div>
+      </div>
+    </td>
+  </tr>
+</table>

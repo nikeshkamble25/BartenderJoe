@@ -1,0 +1,14 @@
+<app-card>
+    <div class="header">
+      You have Selected a product
+    </div>
+    <div class="content">
+      <div style="padding: 10px; height: 70px;">
+        <button mat-button  mat-raised-button class="app-button"
+            [ngClass]="this.product?.productId==0?'app-grayed-button':'app-active-button'"
+            style="width: 100%;">
+            {{this.product?.productName}}
+        </button>
+      </div>
+    </div>
+</app-card>

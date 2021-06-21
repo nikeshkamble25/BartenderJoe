@@ -1,0 +1,13 @@
+<app-card>
+    <div class="header">
+        Enter Product Type (Valid entries: 1-Milk, 2-Orange)
+    </div>
+    <div class="content">
+        <div style="padding: 10px; height: 70px;">
+            <mat-form-field style="width: 90%;padding: 10px;">
+                <mat-label>Enter Product Index</mat-label>
+                <input matInput [(ngModel)]="productId" appFascetTracer (ngModelChange)="onModelChange($event)">
+            </mat-form-field>
+        </div>
+    </div>
+</app-card>

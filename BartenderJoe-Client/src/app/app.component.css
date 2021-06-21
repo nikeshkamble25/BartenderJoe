@@ -1,0 +1,9 @@
+.example-container .mat-form-field + .mat-form-field {
+    margin-left: 8px;
+  }
+.app-button{
+  margin-top: 10px;
+  width: 100%;
+  background-color: #4848d8;
+  color: white;
+}

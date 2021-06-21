@@ -1,0 +1,21 @@
+version: "3"
+services:
+  web:
+    restart: always
+    build: 
+      context: ./BartenderJoe-Client/
+      dockerfile: Dockerfile
+    ports: 
+      - 4200:4200 
+    volumes: 
+      - ./BartenderJoe-Client/node_modules
+      - ./BartenderJoe-Client:/BartenderJoe/client
+  api:
+    restart: always
+    build:
+      context: ./BartenderJoe-Backend/BartenderJoeApi
+      dockerfile: ./BartenderJoeApi/Dockerfile
+    ports:
+      - 5000:5000
+    volumes:
+      - ./BartenderJoe-Backend/BartenderJoeApi:/BartenderJoe/api

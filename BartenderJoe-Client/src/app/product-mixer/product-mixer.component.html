@@ -1,0 +1,15 @@
+<app-card>
+  <div class="header">
+    Bartender Joe
+  </div>
+  <div class="content">
+    <div style="padding: 10px; height: 50px;">
+      <button mat-button mat-raised-button class="app-button"
+        [ngClass]="product?.isMixed ?'app-active-button':'app-grayed-button'" style="width:100%">
+        {{
+          (product?.isMixed)?(product?.mixedProduct):((product?.productId == 0)?"INAVLID PROD TP":"READY TO MIX" )
+        }}
+      </button>
+    </div>
+  </div>
+</app-card>
