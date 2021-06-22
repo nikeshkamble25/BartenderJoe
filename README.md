@@ -1,5 +1,9 @@
 # BartenderJoe
 
+**Prerequisite**
+
+Docker Desktop
+
 **Steps to run this application**
 
 1. Check out a project or download zip file from Git
